@@ -2,19 +2,19 @@
 <html>
 <head>
 <meta charset="utf-8">
-<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+<script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js">
 </script>
 <script>
   var i=1;
 $(document).ready(function(){
   $("#btn1").click(function(){
-    var tx1=$("<b></b>").text(i++);
-    var tx2=$("<b></b>").text(" ");
+    var tx1=$("<span></span>").text(i++);
+    var tx2=$("<span></span>").text(" ");
     $("body").append(tx1,tx2);
   });
 
   $("#btn2").click(function(){
-    $("b").remove();
+    $("span").remove();
     i=1;
   });
 });
@@ -25,5 +25,6 @@ $(document).ready(function(){
 
 <button id="btn1">添加</button>
 <button id="btn2">清除</button>
+ <br>
 </body>
 </html>
